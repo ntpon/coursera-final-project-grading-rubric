@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,6 +17,15 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-logo">Travel Site</div>
+        <div class="nav-search">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search destinations..."
+          />
+          <button id="searchBtn">Search</button>
+          <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
         <ul class="nav-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -25,23 +40,23 @@
         <h1>Welcome to Our Travel Site</h1>
         <p>Discover amazing destinations around the world</p>
 
-        <!-- Simple Search Bar -->
-        <div class="search-box">
-          <input
-            type="text"
-            id="searchInput"
-            placeholder="Search destinations..."
-          />
-          <button id="searchBtn">Search</button>
-        </div>
-        <div id="searchResults" class="search-results"></div>
+        <p>Use the search bar in the navigation to find destinations</p>
 
         <button class="book-btn">Book Now</button>
       </div>
     </section>
 
+    <!-- Search Results Section -->
+    <section id="searchResults" class="search-results-section">
+      <div class="container">
+        <h2>Search Results</h2>
+        <p class="subtitle">Discover your perfect destination</p>
+        <div id="searchResultsContent" class="search-results-content"></div>
+      </div>
+    </section>
+
     <!-- Beach Recommendations -->
-    <section class="recommendations">
+    <section class="recommendations" id="beachSection">
       <div class="container">
         <h2>Beach Destinations</h2>
         <div class="cards">
@@ -66,7 +81,7 @@
     </section>
 
     <!-- Temple Recommendations -->
-    <section class="recommendations">
+    <section class="recommendations" id="templeSection">
       <div class="container">
         <h2>Temple Destinations</h2>
         <div class="cards">
@@ -91,7 +106,7 @@
     </section>
 
     <!-- Country Recommendations -->
-    <section class="recommendations">
+    <section class="recommendations" id="countrySection">
       <div class="container">
         <h2>Country Destinations</h2>
         <div class="cards">
