@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Simple Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">Travel Site</div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="container">
+        <h1>Welcome to Our Travel Site</h1>
+        <p>Discover amazing destinations around the world</p>
+
+        <!-- Simple Search Bar -->
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search destinations..."
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+
+        <button class="book-btn">Book Now</button>
+      </div>
+    </section>
+
+    <!-- Beach Recommendations -->
+    <section class="recommendations">
+      <div class="container">
+        <h2>Beach Destinations</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&h=300&fit=crop"
+              alt="Maldives"
+            />
+            <h3>Maldives</h3>
+            <p>Beautiful beaches with crystal clear water</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=500&h=300&fit=crop"
+              alt="Bali"
+            />
+            <h3>Bali, Indonesia</h3>
+            <p>Exotic beaches with stunning sunsets</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Temple Recommendations -->
+    <section class="recommendations">
+      <div class="container">
+        <h2>Temple Destinations</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1548013146-72479768bada?w=500&h=300&fit=crop"
+              alt="Angkor Wat"
+            />
+            <h3>Angkor Wat, Cambodia</h3>
+            <p>The largest religious monument in the world</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=500&h=300&fit=crop"
+              alt="Golden Temple"
+            />
+            <h3>Golden Temple, India</h3>
+            <p>Beautiful golden architecture</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Country Recommendations -->
+    <section class="recommendations">
+      <div class="container">
+        <h2>Country Destinations</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=300&fit=crop"
+              alt="Japan"
+            />
+            <h3>Japan</h3>
+            <p>Perfect blend of tradition and modernity</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=500&h=300&fit=crop"
+              alt="Thailand"
+            />
+            <h3>Thailand</h3>
+            <p>Land of smiles with vibrant culture</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Your Travel Partner</h3>
+            <p>
+              We help you discover amazing destinations around the world. Our
+              mission is to make travel easy and enjoyable for everyone.
+            </p>
+
+            <h3>Why Choose Us?</h3>
+            <ul>
+              <li>Expert travel planning</li>
+              <li>24/7 customer support</li>
+              <li>Best prices guaranteed</li>
+              <li>Safe and secure bookings</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop"
+              alt="Travel Team"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>Ready to start your next adventure? Contact us!</p>
+
+            <div class="contact-details">
+              <p><strong>Email:</strong> info@travelsite.com</p>
+              <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+              <p><strong>Address:</strong> 123 Travel Street, City, Country</p>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Travel Site. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
